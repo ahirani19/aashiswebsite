@@ -1,0 +1,203 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+            font-family: 'futura';
+            src: url(/Users/aashihirani/Desktop/aashiswebsite/FuturaHandwritten.ttf);
+        }
+
+
+        body {
+            font-family: 'futura';
+            line-height: 1.6;
+            background-color: #f8f4ec;
+        }
+
+
+
+        .navbar {
+            background-color: #f8f4ec;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            z-index: 1000;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .nav-container {
+            padding: 0 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 60px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 90px;
+            background-image: url(/Users/aashihirani/Desktop/aashiswebsite/logo.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 40px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            font-size: 20px;
+            transition: all 0.3s ease;
+            padding: 1px 0;
+            position: relative;
+
+        }
+
+        .nav-links a:hover {
+            color: #666;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: #333;
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .nav-container {
+                padding: 0 15px;
+            }
+
+            .nav-links {
+                gap: 40px;
+            }
+
+            .nav-links a {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-links {
+                gap: 15px;
+            }
+
+            .nav-links a {
+                font-size: 13px;
+            }
+        }
+
+        .content {
+            margin-top: 120px;
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .full-width-container {
+            width: 100vw;
+            margin-left: calc(-50vw + 50%);
+            padding: 0;
+            margin-top: 2px;
+            margin-right: -2px;
+
+        }
+
+        .nametag-text {
+            position: absolute;
+            top: 35%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            z-index: 3;
+        }
+
+        .section {
+            margin-bottom: 60px;
+            padding: 40px 0;
+            min-height: 400px;
+        }
+
+        .section h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .section p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.8;
+        }
+
+        #work {
+            background-color: #f8f4ec;
+            position: relative;
+        }
+
+        #side-quests {
+            background-color: #f8f4ec;
+        }
+
+        #about {
+            background-color: #f8f4ec;
+        }
+
+        #resume {
+            background-color: #f8f4ec;
+        }
+
+        .background-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin-top: -200px;
+        }
+
+        .overlay-video {
+            position: absolute;
+            top: 13%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 450px;
+            height: 400px;
+            object-fit: cover;
+            z-index: 2;
+        }
+
+        @media (max-width: 768px) {
+            .overlay-video {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .overlay-video {
+                width: 100px;
+                height: 100px;
+            }
+        }
