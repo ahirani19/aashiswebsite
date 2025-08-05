@@ -252,7 +252,7 @@
         }
 
 .footerbar {
-    background-color: #f8f4ec;
+    background-color: #EBCBC2;
     width: 100vw;
     max-width: none;
     margin: 0;
@@ -263,6 +263,8 @@
     right: 50%;
     transform: translateX(-50%);
     z-index: 1;
+    display: flex;
+    align-items: center;
 }
 .footerbar .nav-container {
     width: 100%;
@@ -313,7 +315,8 @@
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'futura';
+    text-transform: lowercase;
     font-size: 15px;
 }
 .footerbar .footer-chat a:hover {
@@ -340,7 +343,8 @@
     display: block;
     font-size: 12px;
     color: #888;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'futura';
+    text-transform: lowercase;
     margin-top: 2px;
     letter-spacing: 0.2px;
 }
