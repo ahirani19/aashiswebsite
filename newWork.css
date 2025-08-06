@@ -224,11 +224,13 @@ p{
 
 /* Remove hover states since we're using click now */
 .flip-card:hover {
-    border: 1px solid #332b22;
+    background-color: #F4EEE1;
+
 }
 
 .flip-card:hover .flip-card-inner {
     transform: none;
+
 }
 
 /* Add JavaScript class for flip animation */
@@ -282,7 +284,7 @@ p{
 
 /* Style the back side */
 .flip-card-back {
-    background-color: #f8f4ec;
+    background-color: #F4EEE1;
     color: black;
     transform: rotateY(180deg);
     padding: 30px;

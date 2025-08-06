@@ -201,5 +201,131 @@ p{
     margin: 10px auto 10px auto;
     padding: 0 24px;
 }
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-/* Add any about-specific styles here */
+.center-image {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+}
+
+.center-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.content-item {
+    position: absolute;
+    width: 220px;
+    text-align: center;
+}
+
+.content-item p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #555;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.content-item.underlined p {
+    text-decoration: underline;
+    text-decoration-color: #4a90e2;
+    text-underline-offset: 3px;
+}
+
+/* Arrow styles */
+.arrow {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-image: url('arrow.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Positioning for 6 items in a circle */
+.item-1 {
+    top: 5%;
+    left: 15%;
+}
+.arrow-1 {
+    bottom: 60%;
+    left: 30%;
+    height: 180px;
+    transform: rotate(-75deg);
+}
+
+.item-2 {
+    top: 5%;
+    right: 12%;
+}
+.arrow-2 {
+    bottom: 60%;
+    right: 30%;
+    height: 180px;
+    transform: rotate(30deg);
+}
+
+.item-3 {
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+}
+.arrow-3 {
+    bottom: 40%;
+    left: 30%;
+    height: 180px;
+    transform: rotate(-115deg);
+}
+
+.item-4 {
+    top: 52%;
+    right: 8%;
+    transform: translateY(-50%);
+}
+.arrow-4 {
+    bottom: 40%;
+    right: 27%;
+    height: 180px;
+    transform: rotate(70deg);
+}
+
+.item-5 {
+    bottom: 2%;
+    left: 15%;
+}
+.arrow-5 {
+    bottom: 15%;  /* moves down more */
+    left: 35%;    /* moves right more */
+    height: 180px;
+    transform: rotate(-135deg);
+}
+
+.item-6 {
+    bottom: 5%;
+    right: 15%;
+}
+.arrow-6 {
+    bottom: 18%;  /* moves down more */
+    right: 32%;    /* moves right more */
+    height: 180px;
+    transform: rotate(80deg);
+}
+
+.sub{
+    font-size: 20px !important;
+    margin-bottom: 5px !important;
+}
