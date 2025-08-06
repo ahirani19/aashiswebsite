@@ -79,10 +79,10 @@ function isMobileDevice() {
 
 if (isMobileDevice()) {
     document.body.innerHTML = `
-        <div style="text-align: center; padding: 40px; background: #ff4444; color: white; font-family: Arial, sans-serif;">
-            <h1>Mobile Device Detected</h1>
-            <p>This website is not optimized for mobile devices.</p>
-            <p>Please visit us on a desktop computer for the best experience.</p>
+        <div style="text-align: center; padding: 40px; background:rgb(96, 36, 36); color: white; font-family: 'futura';">
+            <h1>looks like you're using a mobile device!</h1>
+            <p> unfortunately, this website is not optimized for mobile devices (yet!) </p>
+            <p>please visit on a desktop or laptop!</p>
         </div>
     `;
 }
