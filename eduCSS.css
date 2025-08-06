@@ -97,7 +97,7 @@ p{
 
 /* Footer styles */
 .footerbar {
-    background-color: #EBCBC2;
+    background-color: #D5D7D5;
     width: 100vw;
     max-width: none;
     margin: 0;
@@ -110,9 +110,8 @@ p{
     z-index: 1;
     display: flex;
     align-items: center;
-    padding-top: 40px;
-    padding-bottom: 20px;
 }
+
 .footerbar .nav-container {
     width: 100%;
     max-width: 1200px;
