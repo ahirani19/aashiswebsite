@@ -70,3 +70,19 @@ window.addEventListener('load', () => {
         });
     }, 0); // Delay of 1 second after page loads
 });
+
+// Add this script to your HTML head or before closing body tag
+function isMobileDevice() {
+    const mobileRegex = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+    return mobileRegex.test(navigator.userAgent);
+}
+
+if (isMobileDevice()) {
+    document.body.innerHTML = `
+        <div style="text-align: center; padding: 40px; background: #ff4444; color: white; font-family: Arial, sans-serif;">
+            <h1>Mobile Device Detected</h1>
+            <p>This website is not optimized for mobile devices.</p>
+            <p>Please visit us on a desktop computer for the best experience.</p>
+        </div>
+    `;
+}
