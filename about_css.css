@@ -1,9 +1,8 @@
 @font-face {
     font-family: 'futura';
     text-transform: lowercase;
-    src: url(/Users/aashihirani/Documents/aashiswebsite/FuturaHandwritten.ttf);
+    src: url(elements/FuturaHandwritten.ttf);
 }
-
 body {
     font-family: 'futura';
     text-transform: lowercase;

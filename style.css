@@ -6,7 +6,8 @@
 
         @font-face {
             font-family: 'futura';
-            src: url(/Users/aashihirani/Documents/aashiswebsite/FuturaHandwritten.ttf);
+            text-transform: lowercase;
+            src: url(elements/FuturaHandwritten.ttf);
         }
 
 
