@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="work_css.css">
+    <script src="work.js" defer></script>
 </head>
 
 <body>
@@ -35,67 +36,97 @@
         </p>
         <br>
         <!-- card -->
-        <div class="card">
-            <!-- Left Half -->
-            <div class="mockup">
-              <img src="claris.png" alt="Claris mock">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="mockup">
+                        <img src="claris.png" alt="Claris mock">
+                    </div>
+                    <div class="text-section">
+                        <div class="labels">
+                            <span>SPRING 2024</span>
+                            <span>V1 INCUBATOR</span>
+                        </div>
+                        <h2 class="title">Claris</h2>
+                        <p class="subtitle">
+                            A full-stack integrated web application created to help U-M labs keep their materials centralized, data trustworthy, and research moving forward.
+                        </p>
+                    </div>
+                </div>
+                <div class="flip-card-back">
+                    <div class="back-content">
+                        <ul>
+                            <li> Features four features in one: a DOI lookup with attached PDF editor, DropBox and file integration, LLM (AI) assistance trained on lab-specific data, and collaboration capabilities
+                            </li>
+                            <li> Key parts of this project included consumer research with more than 7 labs here at U-M, splitting data into vectorized data bases, integrating numerous existing softwares and adapting them to web-based technologies, and maintaining a brand identity as a pre-seed startup.
+                            </li>
+                            <li> This project was featured at V1 Demo Day, Michigan’s showcase for student-built projects and ventures.
+                            </li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="bubble">TypeScript</span>
+                            <span class="bubble">JavaScript</span>
+                            <span class="bubble">Node.js</span>
+                            <span class="bubble">React</span>
+                            <span class="bubble">Supabase</span>
+                            <span class="bubble">Pinecone</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-          
-            <!-- Right Half -->
-            <div class="text-section">
-              <div class="labels">
-                <span>SPRING 2024</span>
-                <span>V1 INCUBATOR</span>
-              </div>
-              <h2 class="title">Claris</h2>
-              <p class="subtitle">
-                A full-stack integrated web application created to help U-M labs keep their materials centralized, data trustworthy, and research moving forward.
-              </p>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="mockup">
+                        <img src="reguard.png" alt="ReGuard mock">
+                    </div>
+                    <div class="text-section">
+                        <div class="labels">
+                            <span>FALL 2024</span>
+                            <span>MHACKS 2024</span>
+                        </div>
+                        <h2 class="title">ReGuard</h2>
+                        <p class="subtitle">Food, drug, and item recalls increased nearly 20% from 2020 to 2023. We saw a need for an easily accessible health & safety app in our community and decided to use technology and software to help the everyday consumer.</p>
+                    </div>
+                </div>
+                <div class="flip-card-back">
+                    <div class="back-content">
+                        <h3>Technical Details</h3>
+                        <p>Frontend: React Native</p>
+                        <p>Backend: Firebase</p>
+                        <p>Features: Real-time updates, barcode scanning, notification system</p>
+                    </div>
+                </div>
             </div>
-          </div>
-          
+        </div>
 
-          <div class="card">
-            <!-- Left Half -->
-            <div class="mockup">
-              <img src="reguard.png" alt="ReGuard mock">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="mockup">
+                        <img src="bio.png" alt="Biomind Image">
+                    </div>
+                    <div class="text-section">
+                        <div class="labels">
+                            <span>SUMMER 2024</span>
+                            <span>TALARIA INSTITUTE</span>
+                        </div>
+                        <h2 class="title">Light CNN Rad</h2>
+                        <p class="subtitle">A quicker, lightweight convolutional neural network (CNN) for radiology image analysis and tumor detection.</p>
+                    </div>
+                </div>
+                <div class="flip-card-back">
+                    <div class="back-content">
+                        <h3>Technical Details</h3>
+                        <p>Framework: TensorFlow</p>
+                        <p>Language: Python</p>
+                        <p>Features: Real-time image processing, tumor detection, accuracy metrics</p>
+                    </div>
+                </div>
             </div>
-          
-            <!-- Right Half -->
-            <div class="text-section">
-              <div class="labels">
-                <span>FALL 2024</span>
-                <span>MHACKS 2024</span>
-              </div>
-              <h2 class="title">ReGuard</h2>
-              <p class="subtitle"> Food, drug, and item recalls increased nearly 20% from 2020 to 2023. We saw a need for an easily accessible health & safety app in our community and decided to use technology and software to help the everyday consumer
-
-
-                
-              </p>
-            </div>
-          </div>
-
-          <div class="card">
-            <!-- Left Half -->
-            <div class="mockup">
-              <img src="biomind.png" alt="Biomind Image">
-            </div>
-          
-            <!-- Right Half -->
-            <div class="text-section">
-              <div class="labels">
-                <span>SUMMER 2023</span>
-                <span>TALARIA INSTITUTE</span>
-              </div>
-              <h2 class="title">Light CNN Rad</h2>
-              <p class="subtitle"> A quicker, lightweight convolutional neural network (CNN) for radiology image analysis and tumor detection.
-
-
-                
-              </p>
-            </div>
-          </div>
+        </div>
 
        
 
@@ -109,10 +140,6 @@
             <div class="footer-socials">
                 <a href="https://www.linkedin.com/in/aashi-hirani/" target="_blank"><img src="linkedin.webp"
                         alt="LinkedIn" class="footer-icon"></a>
-                <a href="https://x.com/aashiijay" target="_blank"><img src="twitter.png" alt="Twitter"
-                        class="footer-icon"></a>
-                <a href="https://github.com/ahirani19" target="_blank"><img src="github.png" alt="GitHub"
-                        class="footer-icon"></a>
             </div>
         </div>
     </footer>
