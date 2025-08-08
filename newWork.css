@@ -345,9 +345,6 @@ p{
     transition: transform 0.2s;
 }
 
-.tech-stack .bubble:hover {
-    transform: scale(1.1);
-}
 
 .card {
     display: flex;
