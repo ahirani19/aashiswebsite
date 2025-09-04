@@ -1,0 +1,372 @@
+@font-face {
+    font-family: 'futura';
+    text-transform: lowercase;
+    src: url(elements/FuturaHandwritten.ttf);
+}
+
+body {
+    font-family: 'futura';
+    text-transform: lowercase;
+
+    line-height: 1.6;
+    background-color: #f8f4ec;
+}
+
+p {
+    font-family: 'futura';
+    text-transform: lowercase;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #f8f4ec;
+    max-width: 1200px;
+    margin: 20px auto 0 auto;
+    z-index: 10;
+    position: relative;
+}
+
+.nav-container {
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    background-image: url(images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: -80px;
+}
+
+.logo:hover {
+    transform: rotate(15deg);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    padding: 1px 0;
+    position: relative;
+}
+
+.nav-links a:hover {
+    color: #666;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #333;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .nav-container {
+        padding: 0 15px;
+    }
+
+    .nav-links {
+        gap: 40px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+}
+
+/* Footer styles */
+.footerbar {
+    background-color: #D5D7D5;
+    width: 100vw;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #e0dcd2;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+
+.footerbar .nav-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    position: relative;
+}
+
+.footerbar .logo {
+    width: 50px;
+    height: 50px;
+    margin: 0 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.footerbar .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 60vw;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.footerbar .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: normal;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footerbar .nav-links a:hover {
+    color: #666;
+}
+
+.footerbar .footer-chat {
+    position: absolute;
+    left: 30px;
+    font-size: 18px;
+    color: #333;
+    font-family: 'futura';
+    text-transform: lowercase;
+}
+
+.footerbar .footer-chat a {
+    color: rgb(139, 50, 25);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    font-family: 'futura';
+    text-transform: lowercase;
+    font-size: 15px;
+}
+
+.footerbar .footer-chat a:hover {
+    color: #666;
+    text-decoration: underline;
+}
+
+.footerbar .footer-socials {
+    position: absolute;
+    right: 30px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.footerbar .footer-icon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    transition: filter 0.2s;
+}
+
+.footerbar .footer-icon:hover {
+    filter: brightness(0.7);
+}
+
+.footerbar .footer-built {
+    display: block;
+    font-size: 12px;
+    color: #888;
+    font-family: 'futura';
+    text-transform: lowercase;
+    margin-top: 2px;
+    letter-spacing: 0.2px;
+}
+
+/* Art Gallery Styles */
+.art-content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 30px;
+    text-align: left;
+}
+
+.art-content h1 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.art-content p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.art-content hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 30px 0;
+}
+
+.art-gallery {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.art-piece {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 60px;
+    align-items: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.art-main-column {
+    width: 100%;
+}
+
+.main-artwork {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-artwork:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.art-details-column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.detail-shots {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+.detail-shot {
+    width: 250px;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.detail-shot:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.art-description {
+    padding: 15px 0;
+    text-align: center;
+}
+
+.art-description h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.art-description p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .art-content {
+        padding: 0 20px;
+    }
+    
+    .art-content h1 {
+        font-size: 32px;
+    }
+    
+    .art-content p {
+        font-size: 14px;
+    }
+    
+    .art-gallery {
+        padding: 0 20px;
+    }
+    
+    .art-piece {
+        gap: 25px;
+        margin-bottom: 50px;
+        max-width: 100%;
+    }
+    
+    .detail-shots {
+        gap: 15px;
+    }
+    
+    .detail-shot {
+        width: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .art-content h1 {
+        font-size: 24px;
+    }
+    
+    .art-piece {
+        margin-bottom: 35px;
+    }
+    
+    .detail-shots {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .detail-shot {
+        width: 200px;
+    }
+}
