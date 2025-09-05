@@ -12,10 +12,10 @@
 
 
         body {
-            font-family: 'futura';
-            line-height: 1.6;
-            background-color: #f8f4ec;
-        }
+    font-family: 'futura';
+    line-height: 1.6;
+    background-color: #f8f4ec;
+}
 
 
         a{
@@ -116,6 +116,7 @@
             max-width: 1200px;
             margin-left: auto;
             margin-right: auto;
+            margin-top:80px;
             padding-bottom: 0;
         }
 

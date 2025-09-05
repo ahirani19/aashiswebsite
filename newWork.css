@@ -222,19 +222,8 @@ p{
     transform-style: preserve-3d;
 }
 
-/* Remove hover states since we're using click now */
-.flip-card:hover {
-    background-color: #F4EEE1;
-
-}
-
+/* Hover to flip the card */
 .flip-card:hover .flip-card-inner {
-    transform: none;
-
-}
-
-/* Add JavaScript class for flip animation */
-.flip-card.flipped .flip-card-inner {
     transform: rotateY(180deg);
 }
 
